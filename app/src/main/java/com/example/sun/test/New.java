@@ -11,4 +11,5 @@ public class New {
     private String c;
     private String d;
     private String e;
+    private String f;
 }
