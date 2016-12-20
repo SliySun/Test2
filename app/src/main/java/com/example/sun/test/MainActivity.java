@@ -6,6 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+
+/**
+ * fragment onAttach() 测试及github版本测试
+ */
 public class MainActivity extends AppCompatActivity implements BlankFragment2.OnFragmentInteractionListener{
 
     private BlankFragment2 fragment;
