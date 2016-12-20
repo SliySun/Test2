@@ -8,4 +8,5 @@ public class New {
     private String name;
     private String a;
     private String b;
+    private String c;
 }
