@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 
 /**
- * fragment onAttach() 测试及github版本测试
+ * fragment onAttach() 测试及github更新版本测试
  */
 public class MainActivity extends AppCompatActivity implements BlankFragment2.OnFragmentInteractionListener{
 
