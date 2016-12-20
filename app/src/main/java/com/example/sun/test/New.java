@@ -7,4 +7,5 @@ package com.example.sun.test;
 public class New {
     private String name;
     private String a;
+    private String b;
 }
