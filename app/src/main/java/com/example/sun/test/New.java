@@ -5,4 +5,5 @@ package com.example.sun.test;
  */
 
 public class New {
+    private String name;
 }
