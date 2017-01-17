@@ -93,7 +93,18 @@ public class BlankFragment2 extends Fragment implements View.OnClickListener {
 //        mListener= (OnFragmentInteractionListener) activity;
 //    }
 
-    @Override
+
+//    private MainActivity activity;
+//
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        activity= (MainActivity) context;
+//        System.out.println("+++++++++++++++++++++++"+activity);
+//    }
+
+
+        @Override
     public void onAttach(Context context) {
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
@@ -116,7 +127,6 @@ public class BlankFragment2 extends Fragment implements View.OnClickListener {
                         + " must implement ABC_Listener");
             }
         }
-
     }
 
     @Override
@@ -134,6 +144,7 @@ public class BlankFragment2 extends Fragment implements View.OnClickListener {
                 break;
             case R.id.button2:
                 mListener.changeValue("2");
+//                activity.changeValue("2");
                 break;
         }
 
