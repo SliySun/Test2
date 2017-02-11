@@ -2,8 +2,10 @@ package com.example.sun.test;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.format.Formatter;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -29,6 +31,16 @@ public class MainActivity extends AppCompatActivity implements BlankFragment2.On
         LogUtils.i(tag,"我是i级别");
         LogUtils.w(tag,"我是w级别");
         LogUtils.e(tag,"我是e级别");
+
+        //判断sdcard 状态是否正常
+//        Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED);
+
+        //获取文件目录对象剩余空间
+//        long usableSpace = Environment.getExternalStorageDirectory().getUsableSpace();
+        //sdcard 总大小
+//        Environment.getExternalStorageDirectory().getTotalSpace();
+        //将一个long类型的文件大小格式化成用户可以看懂的M,G字符串
+//        String str=Formatter.formatFileSize(this,usableSpace);
 
         textView= (TextView) findViewById(R.id.textView_helloworld);
         addContentLayout();
